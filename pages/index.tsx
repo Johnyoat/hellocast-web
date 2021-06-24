@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {Heading,Text} from "@chakra-ui/layout";
 
 export default function Home() {
   return (
@@ -12,12 +13,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <Heading className={styles.title}>
           Welcome to <a href="#">helloCast!</a>
-        </h1>
+        </Heading>
         </main>
       <footer className={styles.footer}>
-      Copyright ©2021 All rights reserved
+      <Text>Copyright ©2021 All rights reserved</Text>
       </footer>
     </div>
   )
